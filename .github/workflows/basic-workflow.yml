@@ -35,3 +35,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      # Runs a step if PR ONLY!
+      - name: Run a one-line script
+        if: ${{ github.event_name == 'pull-request' }}
+        run: echo Hello, from the PR!
+
