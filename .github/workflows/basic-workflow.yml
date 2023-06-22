@@ -48,6 +48,6 @@ jobs:
       
 
       - name: Run a composite action
-      - uses:  ./.github/actions/hello-schwab-composite-action
+        uses:  ./.github/actions/hello-schwab-composite-action
         with:
             who-to-greet: 'Schwab is here'
