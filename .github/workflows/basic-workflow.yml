@@ -45,6 +45,7 @@ jobs:
         with:
           repository: 'im-sandbox-mikaelt/hello-schwab-composite-action'
           path: ./.github/actions/hello-schwab-composite-action
+          token: ${{ secrets.GH_SECRET }}
       
 
       - name: Run a composite action
